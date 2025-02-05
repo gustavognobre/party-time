@@ -1,0 +1,27 @@
+POST http://localhost:3000/api/services 
+Content-Type: application/json
+
+{
+"name": "Bar da Jurema", 
+"description": "Escolha a decoração para sua festa, e nós a montamos.", 
+"price": 1400, 
+"image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+}
+
+### 
+GET http://localhost:3000/api/services/
+
+### 
+GET http://localhost:3000/api/services/67a27adbc1394bb8c528c2e9
+
+###
+DELETE http://localhost:3000/api/services/67a27adbc1394bb8c528c2e9
+
+###
+PATCH http://localhost:3000/api/services/67a372176b231cb93bc35d41
+Content-Type: application/json
+
+{
+
+  "price": 10000
+}
