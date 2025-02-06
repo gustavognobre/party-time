@@ -11,9 +11,12 @@ router
   .get((req, res) => serviceControllers.getAll(req, res));
 router
   .route("/services/:id")
+  .get((req, res) => serviceControllers.get(req, res));
+router
+  .route("/services/:id")
   .delete((req, res) => serviceControllers.delete(req, res));
 router
   .route("/services/:id")
-  .put((req, res) => serviceControllers.update(req, res));
+  .patch((req, res) => serviceControllers.update(req, res));
 
 module.exports = router;
