@@ -2,7 +2,7 @@ POST http://localhost:5001/api/parties
 Content-Type: application/json
 
 {
-    "title": "Meu evento3",
+    "title": "Meu evento1",
     "author": "Gustavo",
     "description": "Uma festa de aniversário",
     "budget": 19000,
@@ -11,3 +11,16 @@ Content-Type: application/json
 }
 ### 
 GET http://localhost:5001/api/parties/
+### 
+GET http://localhost:5001/api/parties/2
+### 
+DELETE  http://localhost:5001/api/parties/3
+###
+PATCH http://localhost:5001/api/parties/2
+Content-Type: application/json
+
+{
+
+  "budget": 20000,
+  "services": ["3","4"]
+}
